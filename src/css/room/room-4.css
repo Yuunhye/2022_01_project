@@ -1,0 +1,105 @@
+.content-main{
+	padding: 10px 0;
+	display: flex;
+	justify-content: center;
+}
+section{
+	margin: 25px;
+}
+#rooms{
+	background:#ffffff;
+}
+#rooms .card, .card-mine{
+	width:20rem;
+	height:12rem;
+	padding: 1rem!important;
+	border : none;
+	box-shadow:0 0 9px 0 rgb(158, 158, 158);
+	margin-bottom:1rem;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+	pointer-events: auto;
+    cursor: pointer;
+}
+#rooms .card-mine-color{
+	background:rgb(158, 158, 158);
+}
+#rooms .card:hover, #rooms .card-mine:hover{
+	background:rgba(0,0,0,.5);
+}
+#rooms .card .icon, .card-mine .icon {
+	text-align: center;
+	position : relative;
+}
+#rooms .lock__icon, .game__icon, .comment__icon, .bomb__icon{
+	font-size: 100px;
+	margin-right:auto; margin-left:auto;
+	margin-bottom : 7px;
+	color : #007b5e
+}
+
+#rooms .card-block{
+	padding-left: 50px;
+    position: relative;
+}
+#rooms .card-block:before{
+	font-family: FontAwesome;
+    position: absolute;
+    font-size: 39px;
+    color: #007b5e;
+    left: 0;
+	-webkit-transition: -webkit-transform .2s ease-in-out;
+    transition:transform .2s ease-in-out;
+}
+#rooms .card-text{
+	margin-top:7px;
+	position : relative;
+	
+}
+#rooms .card-title{
+	position : relative;
+}
+#rooms .card:hover .icon, .card-mine:hover .icon{
+	-webkit-transform: rotate(15deg);
+	transform: rotate(15deg);	
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#rooms .card:hover .card-title, .card:hover .card-text, .card-mine:hover .card-title, .card-mine:hover .card-text{
+	color : white;	
+	transform : translateY(-95px);
+	transition: .5s all ease;
+}
+
+#rooms .card:hover .participant-list, #rooms .card-mine:hover .participant-list{
+	visibility : inherit;
+	color : white;
+	transform : translateY(-70px);
+	padding-top : 7px;
+	border-top : 1px solid white;
+}
+#rooms .participant-list{
+	visibility: hidden;
+}
+
+#rooms .participant-list ul{
+	display : flex;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+#rooms .participant-list ul li:after{
+	content: ",";
+	margin-right : 5px;
+}
+
+#rooms .participant-list ul li:last-child:after{
+	content: "";
+}
+
+
+
+
+

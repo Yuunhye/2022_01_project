@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../css/main/navbar.css" rel="stylesheet">
+    <link href="../css/room/room-4.css" rel="stylesheet">
+    <link href="../css/room/search.css" rel="stylesheet">
+    <link href="../css/room/toggle.css" rel="stylesheet">
+    <script src="../javascript/room-4.js"></script>
+    <title>KosmoTale:room</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main-page">
+            <div class="header">
+                <h1><a href="#">KosmoTale</h1>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#"><p>채팅방</p></a></li>
+                        <li><a href="#">게시판</a></li>
+                        <li><a href="#">친구관리</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </nav>
+                <div class="main-page-user-profile">
+                    <a href="#" class="profile-link">
+                        <div class="user-class">
+                            <p>노예</p>
+                        </div>
+                        <img class="main-page-profile__image" src="../../img/man.png" alt="프로필 이미지">
+                    </a>
+                </div>
+            </div>
+        </div> 
+        <div class = "content">
+            <section id = "addtional-function">
+                <div class="search-and-add-room">
+                    <div class="search-room">
+                        <form class="search">
+                            <input type="text" name="" placeholder="Search for..." class="search__field">
+                            <button type="summit" class="fa fa-search search__icon"></button>
+                        </form>
+                    </div>
+                    <div class="add-room">
+                        <button type="button" class="fa fa-plus plus__icon"></button>
+                    </div>
+                </div>
+                <div class="toggle-button">
+                    <div class="switchToggle">
+                        <input type="checkbox" id="switch1" value="false" onclick="changeCard(event)">
+                        <label for="switch1"></label>
+                    </div>                
+                </div>
+            </section>
+            <div class="content-main">
+                <section id="rooms">
+                    <div class="container-fluid">
+                        <div class="first-column">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="card-mine card-mine-color">
+                                    <div class="icon">
+                                        <h1><i class = "fa fa-lock lock__icon"></i></h1>
+                                    </div>
+                                    <div class="card-block block-1">
+                                        <h3 class="card-title">20학번 모두 모여라</h3>
+                                        <p class="card-text"><i class="fa fa-user"> 21/100</i></p>
+                                        <div class="participant-list">
+                                            <ul>
+                                                <li>박윤혜</li>
+                                                <li>구유정</li>
+                                                <li>송준규</li>
+                                                <li>정하연</li>
+                                                <li>최은호</li>
+                                                <li>이승섭</li>
+                                                <li>...</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="card-mine card-mine-color">
+                                    <div class="icon">
+                                        <h1><i class = "fa fa-gamepad game__icon"></i></h1>
+                                    </div>
+                                    <div class="card-block block-1">
+                                        <h3 class="card-title">롤 내전할 사람</h3>
+                                        <p class="card-text"><i class="fa fa-user"> 10/10</i></p>
+                                        <div class="participant-list">
+                                            <ul>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="card">
+                                    <div class="icon">
+                                        <h1><i class = "fa fa-comments comment__icon"></i></h1>
+                                    </div>
+                                    <div class="card-block block-1">
+                                        <h3 class="card-title">3대3 소개팅할 사람</h3>
+                                        <p class="card-text"><i class="fa fa-user"> 6/6</i></p>
+                                        <div class="participant-list">
+                                            <ul>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="card">
+                                    <div class="icon">
+                                        <h1><i class = "fa fa-comments comment__icon"></i></h1>
+                                    </div>
+                                    <div class="card-block block-1">
+                                        <h3 class="card-title">3대3 소개팅할 사람</h3>
+                                        <p class="card-text"><i class="fa fa-user"> 6/6</i></p>
+                                        <div class="participant-list">
+                                            <ul>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>	
+                </section>
+                <section id="rooms">
+                    <div class="container-fluid">
+                        <div class="second-column">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="card-mine card-mine-color">
+                                    <div class="icon">
+                                        <h1><i class = "fa fa-comments comment__icon"></i></h1>
+                                    </div>
+                                    <div class="card-block block-1">
+                                        <h3 class="card-title">3대3 소개팅할 사람</h3>
+                                        <p class="card-text"><i class="fa fa-user"> 6/6</i></p>
+                                        <div class="participant-list">
+                                            <ul>
+                                                <li>익명1</li>
+                                                <li>익명2</li>
+                                                <li>익명3</li>
+                                                <li>익명4</li>
+                                                <li>익명5</li>
+                                                <li>익명6</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="card">
+                                    <div class="icon">
+                                        <h1><i class = "fa fa-bomb bomb__icon"></i></h1>
+                                    </div>
+                                    <div class="card-block block-1">
+                                        <h3 class="card-title">수요일 번개</h3>
+                                        <p class="card-text"><i class="fa fa-user"> 8/10</i></p>
+                                        <div class="participant-list">
+                                            <ul>
+                                                <li>익명1</li>
+                                                <li>익명2</li>
+                                                <li>익명3</li>
+                                                <li>익명4</li>
+                                                <li>익명5</li>
+                                                <li>익명6</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="card">
+                                    <div class="icon">
+                                        <h1><i class = "fa fa-lock lock__icon"></i></h1>
+                                    </div>
+                                    <div class="card-block block-1">
+                                        <h3 class="card-title">20학번 모두 모여라</h3>
+                                        <p class="card-text"><i class="fa fa-user"> 21/100</i></p>
+                                        <div class="participant-list">
+                                            <ul>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="card">
+                                    <div class="icon">
+                                        <h1><i class = "fa fa-comments comment__icon"></i></h1>
+                                    </div>
+                                    <div class="card-block block-1">
+                                        <h3 class="card-title">3대3 소개팅할 사람</h3>
+                                        <p class="card-text"><i class="fa fa-user"> 6/6</i></p>
+                                        <div class="participant-list">
+                                            <ul>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>	
+                </section>
+                <section id="rooms">
+                    <div class="container-fluid">
+                        <div class="third-column">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="card-mine card-mine-color">
+                                    <div class="icon">
+                                        <h1><i class = "fa fa-comments comment__icon"></i></h1>
+                                    </div>
+                                    <div class="card-block block-1">
+                                        <h3 class="card-title">KosmoTale 회의방</h3>
+                                        <p class="card-text"><i class="fa fa-user"> 7/7</i></p>
+                                        <div class="participant-list">
+                                            <ul>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="card">
+                                    <div class="icon">
+                                        <h1><i class = "fa fa-lock lock__icon"></i></h1>
+                                    </div>
+                                    <div class="card-block block-1">
+                                        <h3 class="card-title">20학번 모두 모여라</h3>
+                                        <p class="card-text"><i class="fa fa-user"> 21/100</i></p>
+                                        <div class="participant-list">
+                                            <ul>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="card">
+                                    <div class="icon">
+                                        <h1><i class = "fa fa-comments comment__icon"></i></h1>
+                                    </div>
+                                    <div class="card-block block-1">
+                                        <h3 class="card-title">3대3 소개팅할 사람</h3>
+                                        <p class="card-text"><i class="fa fa-user"> 6/6</i></p>
+                                        <div class="participant-list">
+                                            <ul>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                                <div class="card">
+                                    <div class="icon">
+                                        <h1><i class = "fa fa-comments comment__icon"></i></h1>
+                                    </div>
+                                    <div class="card-block block-1">
+                                        <h3 class="card-title">3대3 소개팅할 사람</h3>
+                                        <p class="card-text"><i class="fa fa-user"> 6/6</i></p>
+                                        <div class="participant-list">
+                                            <ul>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>	
+                </section>     
+            </div>
+        </div>   
+    </div>    
+</body>
+</html>

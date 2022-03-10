@@ -1,0 +1,65 @@
+.toggle-button{
+    margin-right : 46rem;
+    
+}
+.switchToggle input[type=checkbox]{
+    height: 0; 
+    width: 0; 
+    visibility: hidden; 
+    position: absolute; 
+}
+.switchToggle label { 
+    margin-left: auto; margin-right:auto;
+    display: inline-block;
+    cursor: pointer; 
+    text-indent: -9999px; 
+    width: 90px; 
+    max-width: 80px; 
+    height: 35px; 
+    background: #d1d1d1; 
+    display: block; 
+    border-radius: 100px; 
+    position: relative;
+    margin-top : 70px;
+}
+.switchToggle label:after {
+    content: ''; 
+    position: absolute; 
+    top: 2px; 
+    left: 2px; 
+    width: 30px; 
+    height: 30px; 
+    background: #fff; 
+    border-radius: 90px; 
+    transition: 0.3s; }
+.switchToggle input:checked + label {
+    background: #3e98d3;
+}
+.switchToggle input + label:before{
+    content: 'ALL'; 
+    position: absolute; 
+    top: 8px; 
+    left: 39px; 
+    width: 26px; 
+    height: 26px; 
+    border-radius: 90px; 
+    transition: 0.3s; 
+    text-indent: 0; 
+    color: #fff; }
+.switchToggle input:checked + label:before{
+    content: 'Mine'; 
+    position: absolute; 
+    top: 8px; 
+    left: 14px; 
+    width: 26px; 
+    height: 26px; 
+    border-radius: 90px; 
+    transition: 0.3s; 
+    text-indent: 0; 
+    color: #fff; }
+.switchToggle input:checked + label:after {
+    left: calc(100% - 2px); 
+    transform: translateX(-100%); }
+.switchToggle label:active:after {width: 60px; } 
+.toggle-switchArea { margin: 10px 0 10px 0; }
+
